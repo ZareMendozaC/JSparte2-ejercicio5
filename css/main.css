@@ -1,0 +1,37 @@
+/* Inserta tu código aquí */
+*{
+	box-sizing: border-box;
+}
+body{
+	background: url(../image/fondo4.jpg) no-repeat center;
+	background-size: cover;
+	height: 600px;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Comfortaa', cursive;
+}	
+.container h1{
+	font-size: 50px;
+	color: white;
+}
+
+.imagen
+{
+	max-width: 100%;
+	width: 300px;
+	margin:0px auto;
+}
+
+.container{
+	margin-top: 20px;
+	background-color:rgba(79,171,208, 0.7);
+}
+
+.respuesta h3
+{
+	color: white;
+	background-color: rgba(125,164,7, 0.5);
+}
+
+.respuesta .btn{
+	background-color: #80c421;
+}
