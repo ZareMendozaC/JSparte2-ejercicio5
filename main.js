@@ -1,4 +1,4 @@
-// funcion para el checked del monoB
+// funcion para el checked del loro
 function loro_si()
 {
     var img = document.getElementById("check_habla");
