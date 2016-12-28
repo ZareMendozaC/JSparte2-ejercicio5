@@ -31,10 +31,10 @@ function evaluar()
     var siTalk = document.getElementById("loro_si").checked;
     var noTalk = document.getElementById("loro_no").checked;
     var n = parseInt( document.getElementById("n").value);
-    console.log(n);
     var salida = document.getElementById("salida");
+    // si esta en el rango de horas permitido y el parametro talk es verdadero
       if((n<7||n>20)&&(siTalk==true))
-
+        
                salida.innerHTML = "<h3 class='animated wobble'> Estamos en problemas!!! ayuda! </h3>";
             else{
                  salida.innerHTML = "<h3 class='animated wobble'> No hay problemas, no temas! </h3>";
