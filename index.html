@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parrot Trouble</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+	<link rel="stylesheet icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/queries.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2 text-center">
+			<h1 class="animated wobble">Parrot Trouble</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-6 col-xs-6">
+
+					<h3>Selecciona la Hora</h3>
+					<select class="form-control" id="n">
+                                
+                                <option value="24">00:00 am</option>
+                                <option value="1">01:00 am</option>
+                                <option value="2">02:00 am</option>
+                                <option value="3">03:00 am</option>
+                                <option value="4">04:00 am</option>
+                                <option value="5">05:00 am</option>
+                                <option value="6">06:00 am</option>
+                                <option value="7">07:00 am</option>
+                                <option value="8">08:00 am</option>
+                                <option value="9">09:00 am</option>
+                                <option value="10">10:00 am</option>
+                                <option value="11">11:00 am</option>
+                                <option value="12">12:00 pm</option>
+                                <option value="13">13:00 pm</option>
+                                <option value="14">14:00 pm</option>
+                                <option value="15">15:00 pm</option>
+                                <option value="16">16:00 pm</option>
+                                <option value="17">17:00 pm</option>
+                                <option value="18">18:00 pm</option>
+                                <option value="19">19:00 pm</option>
+                                <option value="20">20:00 pm</option>
+                                <option value="21">21:00 pm</option>
+                                <option value="22">22:00 pm</option>
+                                <option value="23">23:00 pm</option>
+                            </select>
+				</div>
+				<div class="col-md-6 col-xs-6">
+					<h3>El Loro está hablando?</h3>
+
+					<label for="check_habla">
+					            <input name="habla" type="radio" onchange="loro_si()"  id="loro_si">Si
+				            </label>  
+				            <br>
+				            <label for="check_nohabla">
+					            <input name="habla" type="radio" onchange="loro_no()"  id="loro_no">No
+				            </label>
+					<div id="img_loro"></div>
+				</div>
+			</div>
+			<div class="respuesta">
+				<h4>Averigua si estamos en problemas...</h4>
+				<div class="col-md-12 col-xs-12 salida" id="salida">
+					<center>
+						
+					<center>
+				</div>
+			</div>
+			<p><button onclick="evaluar()" class="btn-success btn-md btn">Evaluar</button></p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
